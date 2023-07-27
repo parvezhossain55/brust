@@ -4,8 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans:wght@700;800&display=swap" rel="stylesheet">
     
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/f0bb785b72.js" crossorigin="anonymous"></script>
+<style>
+  .font-lato{
+    font-family: 'Lato', sans-serif;
+  }
+</style>
+
+</head>
+<body class="font-lato font-normal bg-white ">
+    <header class="text-red-50 px-20">
+        <nav class=" ">
+          <div class="navbar rounded-full bg-[#F85559]">
+  
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">All Fruits</a></li>
+              </ul>
+            </div>
+            
+            <img src="/images/logo.png" alt="">
+            <a class=" font-bold text-5xl pl-3" >Fruit Burst</a>
+          </div>
+          <div class="navbar-end">
+            <input type="text" placeholder="Search" class="input input-bordered rounded-full 	bg-white w-full max-w-xs" />
+            <i class="fa-solid fa-magnifying-glass absolute pr-6 z-10 text-[#121212]"></i>
+        </div></nav>
+        
+        <div class="slide relative z-20 py-10">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full bg-black">
+              <img src="/images/banner1.png" class="w-full" />
+              <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                  <div class="flex flex-col text-center"><h1 class="text-6xl  font-extrabold">Exotic tastes at your <br>
+                    doorstep
+                  </h1>
+                  <p class="text-xl font-normal">We supply highly quality organic products</p>
+                
+                </div>
+                
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <div class="flex flex-col text-center"><h1 class="text-6xl  font-extrabold">Exotic tastes at your <br>
+                  doorstep
+                </h1>
+                <p class="text-xl font-normal">We supply highly quality organic products</p>
+              
+              </div>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <div class="flex flex-col text-center"><h1 class="text-6xl  font-extrabold">Exotic tastes at your <br>
+                  doorstep
+                </h1>
+                <p class="text-xl font-normal">We supply highly quality organic products</p>
+              
+              </div>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+
+              <img src="/images/banner4.png" class="w-full" />
+              <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <div class="flex flex-col text-center"><h1 class="text-6xl  font-extrabold">Exotic tastes at your <br>
+                  doorstep
+                </h1>
+                <p class="text-xl font-normal">We supply highly quality organic products</p>
+              
+              </div> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="smcard w-9/12 mx-auto p-6  relative -mt-32 z-50 bg-white flex items-center">
+            <div class="card card-compact w-96  ">
+              <figure><img src="/images/fruit1.png" alt="Shoes" /></figure>
+              <h1 class=" text-center text-[#121212]">Strawberry</h1>
+            </div>
+
+            <div class="card card-compact w-96 bg-transparent ">
+              <figure><img src="/images/fruit2.png" alt="Shoes" /></figure>
+              <h1 class=" text-center text-[#121212]">Strawberry</h1>
+            </div>
+
+            <div class="card card-compact w-96 bg-transparent ">
+              <figure><img src="/images/fruit3.png" alt="Shoes" /></figure>
+              <h1 class=" text-center text-[#121212]">Strawberry</h1>
+            </div>
+
+            <div class="card card-compact w-96 bg-transparent ">
+              <figure><img src="/images/fruit4.png" alt="Shoes" /></figure>
+              <h1 class=" text-center text-[#121212]">Strawberry</h1>
+            </div>
+
+            <div class="card card-compact w-96 bg-transparent ">
+              <figure><img src="/images/fruit5.png" alt="Shoes" /></figure>
+              <h1 class=" text-center text-[#121212]">Strawberry</h1>
+            </div>
+          </div>
+        </div>
+
+
+    </header>
+
 </body>
 </html>
